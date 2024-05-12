@@ -1,0 +1,178 @@
+/*Slava Ignatiev 322015280  Yagel Atias 208905448*/
+/* CSS Styles for Mitzy-Net Website */
+/* Body styles */
+body {
+    /* Background image and color */
+    background-image: url(./IMGS/Background.png);
+    background-color: #fcc666;
+    background-size: 150px; /* Size of the background image */
+}
+
+/* Container for logo and content */
+.container_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Logo styles */
+#logo1{
+    display: flex;
+    max-width: 750px;
+    border-radius: 50px;
+}
+
+/* Text describing the store */
+.text_1 {
+    background-color: #759b6b;
+    padding: 20px; 
+    border-radius: 10px; 
+    max-width: 600px; 
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fcc666;
+}
+
+/* Sub-header for registration */
+.reg-sub-header {
+    padding: 20px; 
+    border-radius: 10px; 
+    max-width: 600px; 
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fcc666;
+}
+
+/* Registration form container */
+#registration_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; 
+    background-color: #759b6b;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Success message */
+#end {
+    display: none;
+    color: #305943;
+    font-size: small;
+}
+
+/* Row container for form fields */
+.cadentials_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+/* Error messages for email */
+#error_msg_one, #error_msg_two, #email-error-one, #email-error-two {
+    color: red;
+    font-size: small;
+    display: none;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* Password block container */
+#block_psw {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+/* Input field styles */
+#fst_name, #snd_name, #ph_num, #mail, #psw1, #psw2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    font-size: medium;
+}
+
+/* Column container for form fields */
+.cadentials_column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styles for hover effect on input fields and submit button */
+#fst_name:hover, #snd_name:hover, #ph_num:hover, #mail:hover, #psw1:hover, #psw2:hover, #submit:hover {
+    border: 2px solid orangered;
+}
+
+/* Submit button styles */
+#submit {
+    align-self: center;
+    width: 150px;
+    border-radius: 150px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 900px){
+    #logo1{
+        width: 20rem;
+    }
+}
+
+@media (max-width: 400px){
+    #logo1{
+        width: 14rem;
+    }
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #305943;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

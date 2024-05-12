@@ -1,0 +1,68 @@
+<!-- Slava Ignatiev 322015280  Yagel Atias 208905448-->
+<!-- This HTML document represents the front-end structure of the Mitzy-Net website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mitzy-Net</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./CSS/Styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./CSS/IMGS/favi.png" type="image/png">
+    <link rel="shortcut icon" href="./CSS/IMGS/favi.png" type="image/png">
+</head>
+<body>
+    <!-- Container with logo and text -->
+    <div class="container_logo">
+        <!-- Logo image -->
+        <img id="logo1" src="./CSS/IMGS/logo2.png" alt="1">
+        <!-- Text describing the store -->
+        <p class="text_1"> Welcome to Mitzy Net - the store where cats in costumes and dogs 
+            in glasses become the ultimate fashion icons! Our shop offers a wide selection 
+            of stylish accessories for your pets, whether it's hats for cats or designer suits for dogs.
+            We have everything you need to make your furry friend look fabulous in any situation
+            - whether it's a casual coffee meet-up or a fancy red carpet event. Mitzy Net
+            - because your pet deserves a fashionable wardrobe too!</p>
+        <!-- Registration form -->
+        <div id="registration_1">
+            <!-- Sub-header -->
+            <span class="reg-sub-header">Hey there! Be a part of this nonsense, register now!</span>
+            <!-- Success message -->
+            <span id="end">Successfully registered!</span>
+
+            <!-- Form fields -->
+            <form>
+                <!-- Row container for first and last name -->
+                <div class="cadentials_row">
+                    <input type="text" id="fst_name" placeholder="First Name Here"></input>
+                    <input type="text" id="snd_name" placeholder="Last Name Here"></input>
+                </div>
+    
+                <!-- Column container for phone number, email, and password -->
+                <div class="cadentials_column">
+                    <input type="text" id="ph_num" placeholder="Phone Number Here"></input>
+                    <!-- Error messages for email -->
+                    <span id="email-error-one">Email cannot be empty!</span>
+                    <span id="email-error-two">Email is not legal!</span>
+                    <input type="text" id="mail" placeholder="Email Here"></input>
+                    <!-- Password block with error messages -->
+                    <div id="block_psw">
+                        <span id="error_msg_one">Password must contain at least 8 digits</span>
+                        <span id="error_msg_two">Failed to confirm password</span>
+                        <input type="password" id="psw1" placeholder="Password Here"></input>
+                        <input type="password" id="psw2" placeholder="Confirm The Password"></input>
+                    </div>
+                </div>  
+            </form>
+            <!-- Registration button -->
+            <button class="button" style="vertical-align:middle"><span>Register Now!</span></button>
+        </div>
+    </div>
+   
+    <!-- External JavaScript file -->
+    <script src="./JS/javaS.js"></script>
+</body>
+</html>
